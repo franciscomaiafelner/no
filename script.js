@@ -20,15 +20,14 @@ const testimonials = [
   { name: 'Nicole', message: '"Nem todos temos de andar de fralda como tu."' },
   { name: 'Polícia', message: '"Estás presa em nome da lei, por roubar tantos corações."' },
   { name: 'Sapo', message: '"Ché princesa, dá aí um beijo."' },
-  { name: 'Membro da família anónimo', message: '"Se não fosses minha filha violava-te."' },
 ];
 
 let currentTestimonial = 0;
 let testimonialTimer = null;
 
-const nameEl    = document.getElementById('testimonial-name');
+const nameEl = document.getElementById('testimonial-name');
 const messageEl = document.getElementById('testimonial-message');
-const dotsEl    = document.getElementById('testimonial-dots');
+const dotsEl = document.getElementById('testimonial-dots');
 
 function buildDots() {
   dotsEl.innerHTML = '';
