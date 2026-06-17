@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nô Massano.com</title>
+  <meta name="description"
+    content="O portal oficial de educação sobre Leonor Massano — a coisa mais fofinha e boasuda que o universo já produziu." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">Nô Massano.com</div>
+    <ul class="nav-links">
+      <li><a href="#noticias">Início</a></li>
+      <li><a href="#noticias">Notícias</a></li>
+      <li><a href="#testemunhos">Testemunhos</a></li>
+      <li><a href="#orgasmos">Contador</a></li>
+      <li><a href="#manual">Manual</a></li>
+    </ul>
+
+  </nav>
+
+  <!-- INTRO -->
+  <div class="site-intro" id="intro">
+    <p>
+      Muitos de nós perdemo-nos nas rotinas do dia a dia, e esquecemo-nos de tirar um momento para apreciar a existência
+      da Nô. Esta falta de consciência sobre o valor deste humana fofinha e boasuda que a natureza nos deu, pode ter
+      repercuções <strong>gravíssimas</strong> como deixar a Nô triste, ou até deixar a Nô <strong>muito
+        triste</strong>. Este portal procura educar a população sobre o que é Leonor, e porque é que tem de ser tratada
+      com carinho.
+    </p>
+  </div>
+
+  <!-- NOTÍCIAS -->
+  <section class="section" id="noticias">
+    <div class="section-header">
+      <h2 class="section-title">Notícias</h2>
+    </div>
+
+    <!-- Featured + sidebar layout -->
+    <div class="news-layout" id="news-layout">
+
+      <!-- FEATURED (large) -->
+      <article class="news-featured" onclick="openArticle('article1')">
+        <div class="news-img-cover">
+          <img src="leonor.jpg" alt="Leonor" />
+        </div>
+        <div class="news-featured-body">
+          <span class="news-tag">Cultura &amp; Linguagem</span>
+          <h3>As 6 expressões mais utilizadas pela Leonor em 2026</h3>
+          <p>Um estudo exaustivo revelou as frases que definem o vocabulário da Nô este ano.</p>
+          <div class="news-meta">
+            <span class="news-date">16 Jun 2026</span>
+            <span class="read-more">Ler mais →</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- SIDEBAR -->
+      <div class="news-sidebar">
+
+        <article class="news-card-sm" onclick="openArticle('article2')">
+          <div class="news-card-sm-body">
+            <span class="news-tag">História &amp; Investigação</span>
+            <h3>A história de Leonor: uma investigação extensiva</h3>
+            <div class="news-meta">
+              <span class="news-date">10 Mai 2026</span>
+              <span class="read-more">Ler mais →</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="news-card-sm exclusive" onclick="openPaywall()">
+          <div class="news-card-sm-body">
+            <span class="news-tag exclusive-tag">Conteúdo Exclusivo</span>
+            <h3>Leonor é novamente eleita pela comissão alienígena como a coisa mais bonita do universo</h3>
+            <div class="news-meta">
+              <span class="news-date">3 Jun 2026</span>
+              <span class="read-more lock-icon">Assinantes</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="news-card-sm exclusive" onclick="openPaywall()">
+          <div class="news-card-sm-body">
+            <span class="news-tag exclusive-tag">Conteúdo Exclusivo</span>
+            <h3>Como ser como a Leonor — um programa de 10 passos</h3>
+            <div class="news-meta">
+              <span class="news-date">22 Abr 2026</span>
+              <span class="read-more lock-icon">Assinantes</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTICLE MODAL 1 -->
+  <div class="modal-overlay" id="article1" onclick="closeArticleOnOverlay(event, 'article1')">
+    <div class="modal-box article-modal">
+      <button class="modal-close" onclick="closeArticle('article1')">✕</button>
+      <div class="article-tag">Cultura &amp; Linguagem</div>
+      <h2 class="article-title">As 6 expressões mais utilizadas pela Leonor em 2026</h2>
+      <ol class="expressions-list">
+        <li><span class="expr-num">01</span><span class="expr-text">Ai</span></li>
+        <li><span class="expr-num">02</span><span class="expr-text">Tas te a pass</span></li>
+        <li><span class="expr-num">03</span><span class="expr-text">Ganda abuso</span></li>
+        <li><span class="expr-num">04</span><span class="expr-text">Ganda abusiu</span></li>
+        <li><span class="expr-num">05</span><span class="expr-text">Gandi busiu</span></li>
+        <li><span class="expr-num">06</span><span class="expr-text">My Sheyla</span></li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- ARTICLE MODAL 2 -->
+  <div class="modal-overlay" id="article2" onclick="closeArticleOnOverlay(event, 'article2')">
+    <div class="modal-box article-modal">
+      <button class="modal-close" onclick="closeArticle('article2')">✕</button>
+      <div class="article-tag">História &amp; Investigação</div>
+      <h2 class="article-title">A história de Leonor: uma investigação extensiva</h2>
+      <div class="article-body">
+        <p>Para quem vive debaixo de uma pedra e não sabe, Leonor é um bicho que anda por aí.
+          Desde 30 de agosto de 2006, que este bichinho anda aí de um lado para o outro. Antes de 30 de agosto de 2006,
+          não havia sol nem lua no ceu, mas nesse dia o sol nasceu. Astrónomos explicam que todos os dias o sol e a lua
+          aparecem para ver a leonor a andar por aí. Leonor passou uma infância muito feliz a brincar com os outros
+          bichinhos que encontrava no seu jardim.</p>
+        <p>Embora tenha sido difícil encontrar informação no periodo de 2006-2025, tudo indica que leonor sempre foi
+          muito fofinha.</p>
+        <div class="timeline-box">
+          <h3>O seu percurso imobiliário</h3>
+          <div class="timeline">
+            <div class="tl-item">Sintra</div>
+            <div class="tl-arrow">→</div>
+            <div class="tl-item">Telheiras 1</div>
+            <div class="tl-arrow">→</div>
+            <div class="tl-item">Alvalade</div>
+            <div class="tl-arrow">→</div>
+            <div class="tl-item">Telheiras 2</div>
+            <div class="tl-arrow">→</div>
+            <div class="tl-item">Telheiras 1</div>
+          </div>
+        </div>
+        <p>Muitos acreditam que Leonor vivia no Palácio da Pena (quando vivia em sintra) devido ao facto dela ser uma
+          princesa, contudo hoje é bem sabido que vivia numa casa com uma janela grande e um baloiço.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAYWALL MODAL -->
+  <div class="modal-overlay" id="paywallModal" onclick="closeArticleOnOverlay(event, 'paywallModal')">
+    <div class="modal-box paywall-modal">
+      <button class="modal-close" onclick="closeArticle('paywallModal')">✕</button>
+      <h2 class="paywall-title">Conteúdo Exclusivo do<br /><span>Jornal da Nô</span></h2>
+      <p class="paywall-sub">Este artigo é reservado para assinantes premium.</p>
+      <div class="paywall-price">
+        <span class="price-label">Assinatura Semanal</span>
+        <span class="price-value">200€ / semana</span>
+      </div>
+      <button class="btn-subscribe" onclick="alert('Obrigado! A processar o teu pagamento de 200€...')">Assinar agora —
+        200€/semana</button>
+      <div class="paywall-discount">
+        <div class="discount-badge">Desconto Especial</div>
+        <p>Se fores a Nô, podes obter um desconto de <strong>100%</strong>.<br />Basta começar a namorar com o
+          <strong>Francisco Felner</strong>.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- TESTEMUNHOS -->
+  <section class="section testimonials-section" id="testemunhos">
+    <div class="section-header">
+      <h2 class="section-title">Testemunhos</h2>
+    </div>
+    <div class="testimonial-stage">
+      <div class="testimonial-card" id="testimonial-card">
+        <div class="testimonial-name" id="testimonial-name"></div>
+        <div class="testimonial-message" id="testimonial-message"></div>
+
+      </div>
+      <div class="testimonial-dots" id="testimonial-dots"></div>
+    </div>
+  </section>
+
+  <!-- CONTADOR DE ORGASMOS -->
+  <section class="section orgasms-section" id="orgasmos">
+    <div class="section-header">
+      <h2 class="section-title">Contador de Orgasmos</h2>
+    </div>
+    <div class="science-intro">
+      <p>Aproximadamente <strong>100% dos homens heterossexuais e mulheres homossexuais</strong> que já olharam a
+        Leonor, desenvolvem um condição chamada <em>Síndrome de Leonor</em> — um desejo sexual contínuo e
+        incontrolável.</p>
+      <p>Leonor tem causado um efeito nunca antes visto no libido humano. A ciência tentou estudar este fenómeno, mas
+        quando Leonor chegou ao laboratório os cientistas olharam para ela e começaram a ter múltiplos orgasmos, o que
+        impossibilitou a realização do estudo.</p>
+    </div>
+    <div class="counter-grid">
+      <div class="counter-card main-counter">
+        <div class="counter-label">Orgasmos causados pela Leonor</div>
+        <div class="counter-number" id="orgasm-counter">25 946</div>
+        <div class="counter-pulse"></div>
+      </div>
+    </div>
+    <div class="science-note">
+      <p>Embora este volume excessivo de orgasmos pareça uma consequência inofensiva para a sociedade, sujeitos mais
+        frágeis acabam por não aguentar.</p>
+    </div>
+    <div class="counter-grid counter-grid-death">
+      <div class="counter-card death-counter">
+        <div class="counter-label">Pessoas que se masturbaram até à morte por causa da Leonor</div>
+        <div class="counter-number static">13</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MANUAL DE UTILIZAÇÃO -->
+  <section class="section manual-section" id="manual">
+    <div class="section-header">
+      <h2 class="section-title">Manual de Utilização</h2>
+    </div>
+    <div class="manual-list">
+
+      <div class="manual-entry">
+        <div class="manual-state">Leonor Triste</div>
+        <div class="manual-instruction">Sempre que a Leonor parecer triste deve ser dado um beijinho na boca.</div>
+      </div>
+
+      <div class="manual-entry">
+        <div class="manual-state">Leonor Stressada</div>
+        <div class="manual-instruction">Aqui deve-se agir com cautela, mas o recurso ao beijinho ainda é válido.</div>
+      </div>
+
+      <div class="manual-entry">
+        <div class="manual-state">Leonor Feliz</div>
+        <div class="manual-instruction">Festa de beijinhos</div>
+      </div>
+
+      <div class="manual-entry">
+        <div class="manual-state">Leonor Indecisa</div>
+        <div class="manual-instruction">Ser útil e listar os prós e contras, reforçar a ideia que mesmo que seja a
+          decisão errada e corra tudo mal, vai dar ao mesmo porque eu vou compensar a tristeza com amor.</div>
+      </div>
+
+      <div class="manual-entry">
+        <div class="manual-state">Leonor não Bonita</div>
+        <div class="manual-instruction">Não existe</div>
+      </div>
+
+      <div class="manual-entry">
+        <div class="manual-state">Leonor Bonita</div>
+        <div class="manual-instruction">Admirar cada detalhe de leonor que a faz bonita, e dizer-lhe imediatamente para
+          garantir que ela nunca se esquece que é a pessoa mais atraente do mundo.</div>
+      </div>
+
+      <div class="manual-entry">
+        <div class="manual-state">Leonor de uma forma geral</div>
+        <div class="manual-instruction">Dar atenção, beijinhos e todas as outras coisas que dão para dar.</div>
+      </div>
+
+      <div class="manual-entry">
+        <div class="manual-state">Leonor com libido alto</div>
+        <div class="manual-instruction">Aliviar a tensão satisfazendo todos os seus desejos.</div>
+      </div>
+
+      <div class="manual-entry">
+        <div class="manual-state">Leonor com FOME</div>
+        <div class="manual-instruction">Fornecer toda a comida exigida.</div>
+      </div>
+
+      <div class="manual-entry">
+        <div class="manual-state">Leonor com FOMO</div>
+        <div class="manual-instruction">Levá-la onde ela quer ir.</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">Nô Massano.com</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
